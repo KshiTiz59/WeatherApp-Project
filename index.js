@@ -29,4 +29,4 @@ if(req.url==="/"){
     res.end(); 
     });
 }
-}).listen(8000,()=>{console.log("listening port 8000")});
+}).listen(process.env.PORT || 8000,()=>{console.log("listening port 8000")});
